@@ -1,5 +1,9 @@
 # twitter-remover
 
+* free
+* secure
+* open-source
+
 ## Remove Likes
 
 Open your "likes" page and run following in console
