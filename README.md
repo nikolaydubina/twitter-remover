@@ -27,6 +27,24 @@ setInterval(() => {
 }, 1000)
 ```
 
+## Remove Tweets
+
+Open your "posts page, remove "trends" manually and run in console
+
+```javascript
+setInterval(() => {
+  for (const d of document.querySelectorAll('div[data-testid="caret"]')) {
+    d.click();
+    for (const c of document.querySelectorAll('div[data-testid="Dropdown"]')) {
+      c.firstChild.click();
+      for (const e of document.querySelectorAll('div[data-testid="confirmationSheetConfirm"]')) {
+                e.click();
+      }
+    }
+  }
+  window.scrollTo(0, document.body.scrollHeight)
+}, 1000)
+```
 
 ## References
 
