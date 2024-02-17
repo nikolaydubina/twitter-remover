@@ -29,7 +29,7 @@ setInterval(() => {
 
 ## Remove Tweets
 
-Open your "posts" page and run in console
+Open your "posts" page, delete "trending" section manually (since it contains carets as well), and run in console
 
 ```javascript
 setInterval(() => {
@@ -50,7 +50,7 @@ setInterval(() => {
 
 ## Remove Replies
 
-Open your "posts" page and run script
+Open your "posts" page, "trending" section manually (since it contains carets as well), and run script
 
 ```javascript
 setInterval(() => {
