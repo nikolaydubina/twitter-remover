@@ -29,17 +29,40 @@ setInterval(() => {
 
 ## Remove Tweets
 
-Open your "posts page, remove "trends" manually and run in console
+Open your "posts" page and run in console
 
 ```javascript
 setInterval(() => {
   for (const d of document.querySelectorAll('div[data-testid="caret"]')) {
     d.click();
     for (const c of document.querySelectorAll('div[data-testid="Dropdown"]')) {
-      c.firstChild.click();
-      for (const e of document.querySelectorAll('div[data-testid="confirmationSheetConfirm"]')) {
-        e.click();
-      }
+      if (c.firstChild.getElementsByTagName('div')[1].firstChild.firstChild.innerText == "Delete") {
+        c.firstChild.click();
+        for (const e of document.querySelectorAll('div[data-testid="confirmationSheetConfirm"]')) {
+          e.click();
+        }
+			}
+    }
+  }
+  window.scrollTo(0, document.body.scrollHeight)
+}, 1000)
+```
+
+## Remove Replies
+
+Open your "posts" page and run script
+
+```javascript
+setInterval(() => {
+  for (const d of document.querySelectorAll('div[data-testid="caret"]')) {
+    d.click();
+    for (const c of document.querySelectorAll('div[data-testid="Dropdown"]')) {
+      if (c.firstChild.getElementsByTagName('div')[1].firstChild.firstChild.innerText == "Delete") {
+        c.firstChild.click();
+        for (const e of document.querySelectorAll('div[data-testid="confirmationSheetConfirm"]')) {
+          e.click();
+        }
+			}
     }
   }
   window.scrollTo(0, document.body.scrollHeight)
