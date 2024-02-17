@@ -38,7 +38,7 @@ setInterval(() => {
     for (const c of document.querySelectorAll('div[data-testid="Dropdown"]')) {
       c.firstChild.click();
       for (const e of document.querySelectorAll('div[data-testid="confirmationSheetConfirm"]')) {
-                e.click();
+        e.click();
       }
     }
   }
