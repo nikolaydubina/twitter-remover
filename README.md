@@ -1,12 +1,8 @@
 # twitter-remover
 
-* free
-* secure
-* open-source
+Open corresponding page and run following in browser console. Inspired by gist[^gist].
 
 ## Remove Likes
-
-Open your "likes" page and run following in console
 
 ```javascript
 setInterval(() => {
@@ -19,8 +15,6 @@ setInterval(() => {
 
 ## Remove Retweets
 
-Open your "posts" page and run following in console
-
 ```javascript
 setInterval(() => {
   for (const d of document.querySelectorAll('div[data-testid="unretweet"]')) {
@@ -32,8 +26,6 @@ setInterval(() => {
 ```
 
 ## Remove Tweets
-
-Open your "posts" page, delete "trending" section manually (since it contains carets as well), and run in console
 
 ```javascript
 setInterval(() => {
@@ -54,8 +46,6 @@ setInterval(() => {
 
 ## Remove Replies
 
-Open your "posts" page, "trending" section manually (since it contains carets as well), and run script
-
 ```javascript
 setInterval(() => {
   for (const d of document.querySelectorAll('div[data-testid="caret"]')) {
@@ -73,6 +63,4 @@ setInterval(() => {
 }, 1000)
 ```
 
-## References
-
-* https://gist.github.com/aymericbeaumet/d1d6799a1b765c3c8bc0b675b1a1547d
+[^gist]: https://gist.github.com/aymericbeaumet/d1d6799a1b765c3c8bc0b675b1a1547d
