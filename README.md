@@ -2,7 +2,7 @@
 
 Open corresponding page and run following in browser console. Inspired by gist[^gist].
 
-## Remove Likes
+### Remove Likes
 
 ```javascript
 setInterval(() => {
@@ -13,7 +13,7 @@ setInterval(() => {
 }, 1000)
 ```
 
-## Remove Retweets
+### Remove Retweets
 
 ```javascript
 setInterval(() => {
@@ -25,7 +25,7 @@ setInterval(() => {
 }, 1000)
 ```
 
-## Remove Tweets
+### Remove Tweets
 
 ```javascript
 setInterval(() => {
@@ -44,7 +44,7 @@ setInterval(() => {
 }, 1000)
 ```
 
-## Remove Replies
+### Remove Replies
 
 ```javascript
 setInterval(() => {
