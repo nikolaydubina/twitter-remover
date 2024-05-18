@@ -50,14 +50,16 @@ setInterval(() => {
 
 ```javascript
 setInterval(() => {
-    for (const d of document.querySelectorAll('div[data-testid="caret"]')) {
+    for (const d of document.querySelectorAll('[data-testid="caret"]')) {
         d.click();
-        for (const c of document.querySelectorAll('div[data-testid="Dropdown"]')) {
-            if (c.firstChild.getElementsByTagName('div')[1].firstChild.firstChild.innerText == "Delete") {
-                c.firstChild.click();
-                for (const e of document.querySelectorAll('div[data-testid="confirmationSheetConfirm"]')) {
-                    e.click();
-                }
+        for (const c of document.querySelectorAll('[data-testid="Dropdown"]')) {
+            if (c.firstChild.innerText == 'Delete') {
+                c.firstChild.click()
+                setTimeout(() => {
+                    for (const e of document.querySelectorAll('[data-testid="confirmationSheetConfirm"]')) {
+                        e.click();
+                    }
+                }, 500)
             }
         }
     }
