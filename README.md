@@ -8,7 +8,7 @@ Open corresponding page and run following in browser console. Inspired by gist[^
 
 ```javascript
 setInterval(() => {
-    for (const d of document.querySelectorAll('div[data-testid="unlike"]')) {
+    for (const d of document.querySelectorAll('button[data-testid="unlike"]')) {
         d.click()
     }
     window.scrollTo(0, document.body.scrollHeight)
