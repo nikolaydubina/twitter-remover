@@ -2,6 +2,9 @@
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fnikolaydubina%2Ftwitter-remover&count_bg=%23848484&title_bg=%231DA1F2&icon=twitter.svg&icon_color=%23FFFEFE&title=removed&edge_flat=false)](https://hits.seeyoufarm.com)
 
+> [!WARNING]  
+> Twitter changes front-end often. The code may not work all the time. If you find bugs, submit an issue or open a PR with fix.
+
 Open corresponding page and run following in browser console. Inspired by gist[^gist].
 
 ### Remove Likes
