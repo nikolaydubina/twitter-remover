@@ -52,22 +52,29 @@ setInterval(() => {
 ### Remove Replies
 
 ```javascript
-setInterval(() => {
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function deleteReplies() {
     for (const d of document.querySelectorAll('[data-testid="caret"]')) {
         d.click();
+        await sleep(1000);
         for (const c of document.querySelectorAll('[data-testid="Dropdown"]')) {
             if (c.firstChild.innerText == 'Delete') {
-                c.firstChild.click()
-                setTimeout(() => {
-                    for (const e of document.querySelectorAll('[data-testid="confirmationSheetConfirm"]')) {
-                        e.click();
-                    }
-                }, 500)
+                c.firstChild.click();
+                await sleep(1000);
+                for (const e of document.querySelectorAll('[data-testid="confirmationSheetConfirm"]')) {
+                    e.click();
+                }
             }
         }
+        document.querySelector('[data-testid="primaryColumn"]').click();
     }
-    window.scrollTo(0, document.body.scrollHeight)
-}, 1000)
+}
+
+setInterval(deleteReplies, 5000)
+setInterval(window.scrollTo(0, document.body.scrollHeight), 5000)
 ```
 
 ### Remove Followers 
