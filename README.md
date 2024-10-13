@@ -21,13 +21,20 @@ setInterval(() => {
 ### Remove Retweets
 
 ```javascript
-setInterval(() => {
-    for (const d of document.querySelectorAll('div[data-testid="unretweet"]')) {
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function deleteReplies() {
+    for (const d of document.querySelectorAll('[data-testid="unretweet"]')) {
         d.click();
+        await sleep(1000);
         for (const c of document.querySelectorAll('div[data-testid="unretweetConfirm"]')) { c.click(); }
     }
-    window.scrollTo(0, document.body.scrollHeight)
-}, 1000)
+}
+
+setInterval(deleteReplies, 5000)
+setInterval(window.scrollTo(0, document.body.scrollHeight), 5000)
 ```
 
 ### Remove Tweets
