@@ -61,7 +61,7 @@ async function deleteReplies() {
         d.click();
         await sleep(1000);
         for (const c of document.querySelectorAll('[data-testid="Dropdown"]')) {
-            if (c.firstChild.innerText == 'Delete') {
+            if (c.firstChild.innerText.includes('Delete')) {
                 c.firstChild.click();
                 await sleep(1000);
                 for (const e of document.querySelectorAll('[data-testid="confirmationSheetConfirm"]')) {
