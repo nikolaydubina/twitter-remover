@@ -29,7 +29,7 @@ async function deleteReplies() {
     for (const d of document.querySelectorAll('[data-testid="unretweet"]')) {
         d.click();
         await sleep(1000);
-        for (const c of document.querySelectorAll('div[data-testid="unretweetConfirm"]')) { c.click(); }
+        for (const c of document.querySelectorAll('[data-testid="unretweetConfirm"]')) { c.click(); }
     }
 }
 
