@@ -1,4 +1,4 @@
-# twitter-remover
+# twitter-remover / xAI / Grok remover
 
 [![Hits](https://hits.sh/github.com/nikolaydubina/twitter-remover.svg?view=today-total&label=removed&extraCount=4569&logo=twitter)](https://hits.sh/github.com/nikolaydubina/twitter-remover/)
 
@@ -6,6 +6,17 @@
 > Twitter changes front-end often. The code may not work all the time. If you find bugs, submit an issue or open a PR with fix.
 
 Open corresponding page and run following in browser console. Inspired by gist[^gist].
+
+### Remove "Saved" Grok Imaging
+
+```javascript
+setInterval(() => {
+    for (const d of document.querySelectorAll('button[aria-label="Unsave"]')) {
+        d.click()
+    }
+    window.scrollTo(0, document.body.scrollHeight)
+}, 1000)
+```
 
 ### Remove Likes
 
