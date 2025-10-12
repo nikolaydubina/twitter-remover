@@ -10,7 +10,7 @@ Open corresponding page and run following in browser console. Inspired by gist[^
 ### Remove Grok Imagine
 
 > [!CAUTION]  
-> You still need to remove your eniter Grok / xAI account to (hopefully) remove Imagine that you made.
+> You still need to remove your enitre Grok / xAI account to (hopefully) remove Imagine that you made.
 
 > [!CAUTION]  
 > More, given that Grok, xAI, "Restore Purchases" does not work and there are No Refunds, you will loose your subscription payments (up to 300 USD / month).
