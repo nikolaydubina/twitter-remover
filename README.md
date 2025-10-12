@@ -9,6 +9,8 @@ Open corresponding page and run following in browser console. Inspired by gist[^
 
 ### Remove "Saved" Grok Imaging
 
+`2025-10-13` Grok, xAI do not provide method to delete images you uploaded to Grok Imagine (neither in iOS, nor in web), thus here is way to automate deletion in web.
+
 ```javascript
 setInterval(() => {
     for (const d of document.querySelectorAll('button[aria-label="Unsave"]')) {
