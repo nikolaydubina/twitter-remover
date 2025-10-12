@@ -15,6 +15,9 @@ Open corresponding page and run following in browser console. Inspired by gist[^
 > [!CAUTION]  
 > More, given that Grok, xAI, "Restore Purchases" does not work and there are No Refunds, you will loose your subscription payments (up to 300 USD / month).
 
+> [!CAUTION]  
+> Grok Imagine is assumed to be "Public". Everyone has access to Imagine you generated. Even if you scheduled your account for deletion in 30 days and even if you "Unfavorited" your Imagine, it is still publicly available to everyone. 
+
 `2025-10-13` Grok, xAI do not provide method to delete images thay you uploaded to Grok Imagine (neither in iOS, nor in web). deleting all history of chats does not help. deleting account has 30 days grace period. here is a way to automate "Unfavorite" all in web. there is no certainty that those images will be deleted from their servers, but this is your best bet.
 
 ```javascript
