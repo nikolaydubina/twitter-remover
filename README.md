@@ -9,7 +9,7 @@ Open corresponding page and run following in browser console. Inspired by gist[^
 
 ### Remove "Saved" Grok Imaging
 
-`2025-10-13` Grok, xAI do not provide method to delete images you uploaded to Grok Imagine (neither in iOS, nor in web), thus here is way to automate deletion in web.
+`2025-10-13` Grok, xAI do not provide method to delete images thay you uploaded to Grok Imagine (neither in iOS, nor in web). deleting all history of chats does not help. deleting account has 30 days grace period. here is a way to automate "Unfavorite" all in web. there is no certainty that those images will be deleted, but this is your best bet.
 
 ```javascript
 setInterval(() => {
