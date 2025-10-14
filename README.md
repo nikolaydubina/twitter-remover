@@ -1,4 +1,4 @@
-# 🧹 twitter-remover / X / xAI / Grok remover
+# 🧹 twitter / X / xAI / Grok remover
 
 [![Hits](https://hits.sh/github.com/nikolaydubina/twitter-remover.svg?view=today-total&label=removed&extraCount=4569&logo=twitter)](https://hits.sh/github.com/nikolaydubina/twitter-remover/)
 
