@@ -1,9 +1,5 @@
 # 🧹 twitter / X / xAI / Grok remover
 
-<p align="center">
-  ✨ Sponsored by <a href="https://ndx.one/?ct=github">NDX Technologies</a>
-</p>
-
 [![Hits](https://hits.sh/github.com/nikolaydubina/twitter-remover.svg?view=today-total&label=removed&extraCount=4569&logo=twitter)](https://hits.sh/github.com/nikolaydubina/twitter-remover/)
 
 > [!WARNING]  
