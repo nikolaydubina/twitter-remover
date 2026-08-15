@@ -1,7 +1,5 @@
 # 🧹 twitter / X / xAI / Grok remover
 
-[![Hits](https://hits.sh/github.com/nikolaydubina/twitter-remover.svg?view=today-total&label=removed&extraCount=4569&logo=twitter)](https://hits.sh/github.com/nikolaydubina/twitter-remover/)
-
 > [!WARNING]  
 > Twitter changes front-end often. The code may not work all the time. If you find bugs, submit an issue or open a PR with fix.
 
